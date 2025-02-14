@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.cards{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    min-height: 490px;
+    align-content: space-evenly;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card{
+    width: 250px;
+    height: 450px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.img-part{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.img-part img{
+    position: absolute;
+    width: 246px;
+    height: 300px;
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.img-part:hover{
+    overflow: hidden;
+    transform: scale(1);
+}
+
+.img-part:hover img{
+    transform: scale(1.1);
+}
+
+.img-part .action{
+    z-index: 2;
+    position: relative;
+    left: 10px;
+    top: 265px;
+    background: #3B007D;
+    padding: 0 5px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.img-part .action:hover{
+    transform: scale(1.05);
+    cursor: default;
+}
+
+.img-part i{
+    z-index: 2;
+    position: relative;
+    top: 10px;
+    left: 155px;
+    font-size: 25px;
+    transition: all 0.3s;
+}
+
+.img-part i:hover{
+    transform: scale(1.1);
+    top: 30px;
+}
+
+.text-part{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.about-product{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.comments{
+    display: flex;
+    gap: 5px;
+    font-weight: 100;
+}
+
+.comments i{
+    color: #FFB54C;
+}
+
+.d_p{
+    width: 160px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: 500;
+    background: #FFFF00;
+    transition: all 0.3s;
+}
+
+.d_p:hover{
+    transform: scale(1.05);
+    cursor: default;
+}
+
+.buy{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price b{
+    font-weight: normal;
+    text-decoration: line-through;
+    color: #8B8E99;
+    font-size: 14px;
+}
+
+.buy i{
+    padding: 10px;
+    border: 1.5px solid #8B8E99;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.buy i:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.more{
+    width: 750px;
+    height: 40px;
+    background: #c0c0c0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.more:hover{
+    background: #929292;
+}
+
+.more p{
+    font-weight: 500;
+    font-size: 18px;
+}
